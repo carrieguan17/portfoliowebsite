@@ -5,8 +5,9 @@
   padding-top: 3rem;
   padding-bottom: 3rem;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(18.7rem, 1fr));
   grid-gap: 3.5rem;
+  justify-content: center;
 }
 
 .card {
@@ -19,9 +20,10 @@
   border-radius: 30px;
 
   display: grid;
-  grid-template-rows: min-content, 1fr;
-  align-items: center;
+  grid-template-rows: repeat(2, min-content);
+  grid-gap: 0.9rem;
   justify-content: center;
+  padding-top: 1.5rem;
 }
 
 .cardImg {
