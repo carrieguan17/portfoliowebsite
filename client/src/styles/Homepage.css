@@ -1,0 +1,4 @@
+.homepage {
+  background-color: darkcyan;
+  grid-column: full-start / full-end;
+}

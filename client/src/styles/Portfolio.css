@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+.portfolio {
+  grid-column: center-start / center-end;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 3.5rem;
+}
+
+.card {
+  width: 18.7rem;
+  height: 14rem;
+  background: #FCFAF0;
+  border: 2px solid rgba(192, 199, 197, 0.42);
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+
+  display: grid;
+  grid-template-rows: min-content, 1fr;
+  align-items: center;
+  justify-content: center;
+}
+
+.cardImg {
+  width: 12.5rem;
+  height: 7.82rem;
+}
+
+.cardWords {
+  font-family: Lora;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.89rem;
+  line-height: 1.13rem;
+  color: #393E46;
+}

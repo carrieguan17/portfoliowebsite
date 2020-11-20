@@ -1,0 +1,5 @@
+.aboutPhoto {
+  background-color: #73DCD6;
+  grid-column: col-end 5 / full-end;
+
+}

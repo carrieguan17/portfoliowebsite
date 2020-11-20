@@ -1,0 +1,4 @@
+.blog {
+  background-color: darkcyan;
+  grid-column: col-end 1 / col-end 7;
+}

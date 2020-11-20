@@ -1,19 +1,10 @@
 import React from 'react';
-import styles from '../styles/Topbar.css';
+import styles from '../styles/Topbar.css'
 
 function Topbar () {
-  return (
-    <div className={styles.topBarVP}>
-      <div className={styles.tealBar}>
-        <div className={styles.tabContainer}>
-          <div className={styles.tabItems}>About</div>
-          <div className={styles.tabItems}>Portfolio</div>
-          <div className={styles.tabItems}>Blog</div>
-          <div className={styles.tabItems}>Contact</div>
-        </div>
-      </div>
-      <div className={styles.logoCircle}></div>
-      <div className={styles.logoWords}>CG</div>
+  return(
+    <div className={styles.topbar}>
+      <div>Topbar</div>
     </div>
   )
 }
