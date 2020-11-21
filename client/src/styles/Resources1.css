@@ -1,5 +1,95 @@
-.resources1 {
-  background-color: darkcyan;
-  grid-column: col-end 2 / col-end 5;
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
 
+.resources1 {
+  grid-column: col-end 1 / col-end 5;
+
+  display: grid;
+  grid-template-rows: repeat(9 min-content);
+  padding-left: 2rem;
+}
+
+.bar {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: [bar-start] repeat(10, [bar-col-start] 1fr [bar-col-end]) [bar-end];
+  height: 1.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.nameBar {
+  z-index: 3;
+  grid-column: bar-col-start / bar-col-end 3;
+  background: linear-gradient(180deg, #00ADB5 52.6%, #C4C4C4 100%);
+  filter: drop-shadow(-4px 2px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 20px;
+  width: 115%;
+  text-align: center;
+  align-content: center;
+  display: grid;
+
+  font-family: Lora;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  color: #FCFAF0;
+}
+
+.fillBar95 {
+  z-index: 2;
+  grid-column: bar-col-end 3 / bar-col-end 8;
+  background: linear-gradient(180deg, #73DCD6 54.17%, rgba(192, 199, 197, 0.67) 100%);
+  filter: drop-shadow(-6px 2px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 20px;
+  width: 110%
+}
+
+.numBar95 {
+  z-index: 1;
+  grid-column: bar-col-end 8 / bar-end;
+  background: linear-gradient(180deg, #FCFAF0 58.85%, rgba(252, 250, 240, 0) 100%);
+  filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 20px;
+  text-align: end;
+  align-content: center;
+  display: grid;
+}
+
+.fillBar80 {
+  z-index: 2;
+  grid-column: bar-col-end 3 / bar-col-end 7;
+  background: linear-gradient(180deg, #73DCD6 54.17%, rgba(192, 199, 197, 0.67) 100%);
+  filter: drop-shadow(-6px 2px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 20px;
+  width: 110%
+}
+
+.numBar80 {
+  z-index: 1;
+  grid-column: bar-col-end 7 / bar-end;
+  background: linear-gradient(180deg, #FCFAF0 58.85%, rgba(252, 250, 240, 0) 100%);
+  filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 20px;
+  text-align: end;
+  align-content: center;
+  display: grid;
+}
+
+.fillBar65 {
+  z-index: 2;
+  grid-column: bar-col-end 3 / bar-col-end 6;
+  background: linear-gradient(180deg, #73DCD6 54.17%, rgba(192, 199, 197, 0.67) 100%);
+  filter: drop-shadow(-6px 2px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 20px;
+  width: 110%;
+}
+
+.numBar65 {
+  z-index: 1;
+  grid-column: bar-col-end 6 / bar-end;
+  background: linear-gradient(180deg, #FCFAF0 58.85%, rgba(252, 250, 240, 0) 100%);
+  filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 20px;
+  text-align: end;
+  align-content: center;
+  display: grid;
 }
