@@ -1,5 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
 .aboutWords {
-  background-color: darkcyan;
   grid-column: center-start / col-end 6;
 
+  display: grid;
+  grid-template-rows: repeat(2,min-content) 1fr;
+  grid-gap: 1rem;
+  padding-top: 8rem;
+  padding-bottom: 3rem;
+}
+
+.circleContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding-bottom: 1rem;
+}
+
+.circle {
+  background-image: url("https://cgportfolioweb.s3-us-west-1.amazonaws.com/circle.png");
+
+  background-size: 7.10rem 5.96rem;
+  width: 7.10rem;
+  height: 5.96rem;
+
+  display: grid;
+
+  justify-items: center;
+  align-content: center;
+  font-family: Lora;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 0.933rem;
+
+  color: #393E46;
+}
+
+.about {
+  padding-left: 3.31rem;
+  font-family: Lora;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.244rem;
+  color: #393E46;
+}
+
+.intro {
+  display: grid;
+  text-align: justify;
+  padding-left: 6.635rem;
+  padding-right: 2rem;
+  font-family: Lora;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: #393E46;
 }
