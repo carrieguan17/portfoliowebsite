@@ -3,8 +3,9 @@ import ReactDOM from 'react-dom';
 import axios from 'axios';
 import styles from './styles/App.css'
 import Header from './components/Header.jsx';
-import Homepage from './components/Homepage.jsx'
+import Homepage from './components/Homepage.jsx';
 import Topbar from './components/Topbar.jsx';
+import Topbar2 from './components/Topbar2.jsx';
 import AboutWords from './components/AboutWords.jsx';
 import AboutPhoto from './components/AboutPhoto.jsx';
 import Resources1 from './components/Resources1.jsx';
@@ -21,9 +22,10 @@ class App extends React.Component {
   render () {
     return (
       <div>
+        {/* <Topbar2 /> */}
+        <Topbar />
         <div className={styles.container}>
           <Homepage />
-          <Topbar />
           <AboutWords />
           <AboutPhoto />
           <Resources1 />
@@ -34,6 +36,7 @@ class App extends React.Component {
         </div>
         <Header />
       </div>
+
     )
   }
 }

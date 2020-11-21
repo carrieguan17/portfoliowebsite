@@ -2,13 +2,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
 
 .topBarVP {
-  width: 100vw;
-  max-width: 1440px !important;
+  width: 90vw;
+  max-width: 1152px !important;
   top: 0%;
   left: 50%;
   transform: translate(-50%, 0);
-  position: fixed;
-  z-index: 100;
+  position: sticky;
+  z-index: 50;
 }
 
 .tealBar {
@@ -28,6 +28,7 @@
   top: 15px;
   border-radius: 50%;
   background: #73DCD6;
+  z-index: 51;
 }
 
 .logoWords {
@@ -44,6 +45,7 @@
   line-height: 80px;
 
   color: #FCFAF0;
+  z-index: 52;
 }
 
 .tabContainer {

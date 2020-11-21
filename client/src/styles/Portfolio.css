@@ -1,18 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
 
 .portfolio {
-  grid-column: center-start / center-end;
+  grid-column: col-end 1 / col-end 9;
   padding-top: 3rem;
   padding-bottom: 3rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(18.7rem, 1fr));
-  grid-gap: 3.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(15.5rem, 1fr));
+  grid-gap: 2.5rem;
   justify-content: center;
+  justify-items: center;
+  align-items: center;
 }
 
 .card {
-  width: 18.7rem;
-  height: 14rem;
+  width: 15.5rem;
+  height: 11.61rem;
   background: #FCFAF0;
   border: 2px solid rgba(192, 199, 197, 0.42);
   box-sizing: border-box;
@@ -21,21 +23,22 @@
 
   display: grid;
   grid-template-rows: repeat(2, min-content);
-  grid-gap: 0.9rem;
+  grid-gap: 0.8rem;
   justify-content: center;
-  padding-top: 1.5rem;
+  align-items: center;
+  padding-top: 1.2rem;
 }
 
 .cardImg {
-  width: 12.5rem;
-  height: 7.82rem;
+  width: 10.37rem;
+  height: 6.48rem;
 }
 
 .cardWords {
   font-family: Lora;
   font-style: normal;
   font-weight: normal;
-  font-size: 0.89rem;
-  line-height: 1.13rem;
+  font-size: 0.8rem;
+  line-height: 1rem;
   color: #393E46;
 }

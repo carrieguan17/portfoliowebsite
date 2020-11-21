@@ -1,5 +1,5 @@
 .aboutWords {
   background-color: darkcyan;
-  grid-column: full-start / col-end 5;
+  grid-column: center-start / col-end 6;
 
 }

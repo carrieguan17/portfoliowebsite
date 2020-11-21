@@ -1,4 +1,4 @@
 .contact {
   background-color: burlywood;
-  grid-column: center-start / center-end;
+  grid-column: col-end 1 / col-end 9;
 }
