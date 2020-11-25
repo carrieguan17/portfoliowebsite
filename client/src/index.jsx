@@ -32,8 +32,8 @@ class App extends React.Component {
           <Resources2 />
           <Portfolio />
           <Blog />
-          <Contact />
         </div>
+        <Contact />
         <Header />
       </div>
 

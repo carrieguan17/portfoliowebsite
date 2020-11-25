@@ -10,15 +10,17 @@
   display: grid;
   grid-template-rows: 5.18rem;
   grid-template-columns: [full-start] minmax(3.5rem, 1fr) [center-start] repeat(10, [col-start] minmax(min-content, 8rem) [col-end]) [center-end] minmax(3.5rem, 1fr) [full-end];
+
+  z-index: 100;
 }
 
 .logoContainer {
   grid-column: center-start / col-end 5;
   background: #00ADB5;
+  box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.25);
 
   display: grid;
   grid-template-columns: [logo-start] repeat(5, [logo-col-start] 1fr [logo-col-end]);
-
 }
 
 .logo {
@@ -46,6 +48,7 @@
   grid-column: col-end 5 / center-end;
   height: 5.18rem;
   background: #00ADB5;
+  box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.25);
 
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));

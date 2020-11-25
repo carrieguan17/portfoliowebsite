@@ -1,4 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
 .blog {
-  background-color: darkcyan;
-  grid-column: col-end 2 / col-end 8;
+  grid-column: center-start / center-end;
+  display: grid;
+  grid-template-rows: 10rem, 1fr;
+  grid-template-columns: repeat(10, [blog-col-start] 1fr [blog-col-end]);
+  padding-top: 8rem;
+  padding-bottom: 7rem;
+}
+
+.topic {
+  grid-column: blog-col-end 1 / blog-col-end 9;
+  font-family: Lora;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  color: #393E46;
+  padding-bottom: 1.5rem;
+}
+
+.articleContainer {
+  grid-column:  blog-col-end 1 / blog-col-end 9;
+  background: #FCFAF0;
+  border: 2px solid rgba(192, 199, 197, 0.42);
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  height: 26rem;
+
+  display: grid;
+  grid-template-rows: repeat(8, 1fr);
+  align-items: flex-end;
 }

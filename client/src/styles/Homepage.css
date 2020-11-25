@@ -1,4 +1,5 @@
 .homepage {
   background-color: darkcyan;
   grid-column: center-start / center-end;
+  z-index: 200;
 }
