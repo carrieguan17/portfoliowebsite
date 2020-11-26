@@ -1,4 +1,27 @@
 .contact {
   background-color: burlywood;
-  grid-column: col-end 1 / col-end 9;
+  grid-column: center-start / center-end;
+
+  display: grid;
+  grid-template-columns: 1fr [contact-start] minmax(min-content, 20rem) [contact-end] 1fr;
+
+  height: 5rem;
+  align-items: center;
+  background: #00ADB5;
+}
+
+.contactContainer {
+  grid-column: contact-start / contact-end;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contactIcon {
+  height: 3.5rem;
+  width: 3.5rem;
+  background: #73DCD6;
+  fill: #FCFAF0;
+  border-radius: 15%;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
 }
