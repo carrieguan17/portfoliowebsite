@@ -1,5 +1,22 @@
 .homepage {
-  background-color: darkcyan;
+  background-image: url("https://cdn.pixabay.com/photo/2016/08/31/11/30/san-francisco-1633202_1280.jpg");
+  background: url("https://cdn.pixabay.com/photo/2014/06/16/23/40/teal-370129_1280.png");
   grid-column: center-start / center-end;
-  z-index: 200;
+  z-index: 300;
+
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: [HP-start] repeat(8, [HP-col-start] 1fr [HP-col-end]) [HP-end];
+}
+
+.words {
+  grid-column: HP-start / HP-end;
+}
+
+.photo {
+  grid-column: HP-start / HP-col-end 5;
+}
+
+.button {
+  grid-column: HP-col-end 5 / HP-end;
 }
