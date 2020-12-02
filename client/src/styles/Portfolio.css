@@ -2,8 +2,7 @@
 
 .portfolio {
   grid-column: col-end 1 / col-end 9;
-  padding-top: 8rem;
-  padding-bottom: 3rem;
+  padding-top: 6rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(15.5rem, 1fr));
   grid-gap: 2.5rem;

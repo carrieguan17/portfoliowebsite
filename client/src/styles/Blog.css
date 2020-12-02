@@ -3,20 +3,9 @@
 .blog {
   grid-column: center-start / center-end;
   display: grid;
-  grid-template-rows: 10rem, 1fr;
   grid-template-columns: repeat(10, [blog-col-start] 1fr [blog-col-end]);
-  padding-top: 8rem;
-  padding-bottom: 7rem;
-}
-
-.topic {
-  grid-column: blog-col-end 1 / blog-col-end 9;
-  font-family: Lora;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 24px;
-  color: #393E46;
-  padding-bottom: 1.5rem;
+  padding-top: 6rem;
+  padding-bottom: 4rem;
 }
 
 .articleContainer {

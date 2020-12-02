@@ -5,7 +5,7 @@
   display: grid;
   grid-template-columns: 1fr [contact-start] minmax(min-content, 20rem) [contact-end] 1fr;
 
-  height: 5rem;
+  height: 4.5rem;
   align-items: center;
   background: #00ADB5;
 }
@@ -17,8 +17,8 @@
 }
 
 .contactIcon {
-  height: 3.5rem;
-  width: 3.5rem;
+  height: 3rem;
+  width: 3rem;
   background: #73DCD6;
   fill: #FCFAF0;
   border-radius: 15%;

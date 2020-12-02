@@ -7,7 +7,6 @@ function Blog () {
 
   return(
     <div className={styles.blog}>
-      <div className={styles.topic}>Topics</div>
       <div className={styles.articleContainer}>
         <div></div>
         <Article title="How to work with large amount of data using Streams and Drain Event" active={active} setActive={setActive} />
