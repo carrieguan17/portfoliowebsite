@@ -2,6 +2,18 @@ import React, { useState } from 'react';
 import styles from '../styles/Modal.css';
 import classnames from 'classnames';
 
+const testProject = {
+    "tech": ["figma", "css", "react", "nodejs", "aws"]
+}
+
+
+const icon = {
+  "figma": "https://img2.pngio.com/the-design-tools-that-we-work-with-figma-agdigital-figma-png-1660_980.png",
+  "css": "https://e7.pngegg.com/pngimages/658/623/png-clipart-cascading-style-sheets-html-web-development-javascript-web-browser-vs-miscellaneous-blue.png",
+  "react": "https://www.pngfind.com/pngs/m/638-6386507_10-years-of-experience-react-native-logo-svg.png",
+  "nodejs": "https://i7.pngguru.com/preview/99/903/609/node-js-express-js-javascript-npm-installation-others.jpg",
+  "aws": "https://p.kindpng.com/picc/s/152-1522129_how-to-manage-and-automate-aws-ebs-snapshots.png"
+}
 
 function Modal (props) {
 
@@ -50,7 +62,15 @@ function Modal (props) {
                   moveForward && styles.moveForward,
                   !moveForward && styles.moveBackward) }
               >
-                <div className={styles.carouselCard}>page1</div>
+                <div className={styles.carouselCard}>
+                    <iframe className={styles.videoPlayer} src="https://www.youtube.com/embed/oiOzU30eLbg" frameborder="0" allowfullscreen allow="autoplay"/>
+                  <div>Website: carrieguan.com</div>
+                  <div className={styles.techIconContainer}>
+                    {testProject.tech.map((item) => (
+                      <img src={icon[item]} className={styles.techIcon}/>
+                    ))}
+                  </div>
+                </div>
                 <div className={styles.carouselCard}>page2</div>
               </div>
             </div>
