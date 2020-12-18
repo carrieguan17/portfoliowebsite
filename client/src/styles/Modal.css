@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+.modalBackground {
+  background: rgb(34, 34, 34);
+  opacity: 0.6;
+  position: fixed;
+  z-index: 400;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+
+  overflow-y: auto;
+  bottom: -250px;
+  transition: bottom 1.3s ease out;
+}
+
+.modal {
+  z-index: 401;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+
+  display: grid;
+  grid-template-columns: [full-start] minmax(3.5rem, 1fr) [center-start] repeat(10, [col-start] minmax(min-content, 8rem) [col-end]) [center-end] minmax(3.5rem, 1fr) [full-end];
+
+  align-items: center;
+}
+
+.frame {
+  z-index: 402;
+  min-height: 32rem;
+  max-height: 48rem;
+  grid-column: col-end 2 / col-end 8;
+  background: rgb(255, 255, 255) !important;
+  border-radius: 30px;
+  box-shadow: rgba(0, 0, 0, 0.28) 0px 8px 28px;
+
+  display: grid;
+  grid-template-rows: 5.5rem 1fr;
+
+}
+
+.modalHeader {
+  height: 5.5rem;
+  background: #00ADB5;
+  border-radius: 30px 30px 0px 0px;
+  align-items: center;
+  display: grid;
+}
+
+.headerContent {
+  padding-left: 4rem;
+  padding-right: 4rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.headerWords {
+  font-family: Lora;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  color: #FCFAF0;
+  display: grid;
+  align-items: flex-end;
+}
+
+.icon {
+  height: 2.5rem;
+  width: auto;
+  display: block;
+  background: #73DCD6;
+  fill: #FCFAF0;
+  border-radius: 50%;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  align-items: center;
+}
+
+.modalContent {
+  display: grid;
+  grid-template-columns: 6rem 1fr 6rem;
+}
+
+.side {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.carouselButton {
+  height: 2rem;
+  width: auto;
+  display: block;
+  background: #73DCD6;
+  fill: #393E46;
+  border-radius: 50%;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  align-items: center;
+}
+
+.modalCarousel {
+  flex-direction: row;
+  width: fit-content;
+  display: flex;
+  min-height: 26rem;
+  max-height: 42rem;
+  overflow-x: auto;
+  overflow-y: auto;
+}
+
+.cancelBtn {
+
+}

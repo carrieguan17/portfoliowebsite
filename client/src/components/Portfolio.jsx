@@ -1,11 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styles from '../styles/Portfolio.css';
 import font from '../styles/Typography.CSS'
 
-function Portfolio () {
+function Portfolio (props) {
+
   return(
     <div className={styles.portfolio}>
-      <div className={styles.card}>
+      <div className={styles.card} onClick={() => props.onClickCard()}>
         <img className={styles.cardImg}></img>
         <div className={styles.cardWords}>
           <div>Small Business Website</div>
@@ -48,7 +49,7 @@ function Portfolio () {
         </div>
       </div>
     </div>
-)
+  )
 }
 
 export default Portfolio

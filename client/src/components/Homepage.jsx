@@ -10,7 +10,7 @@ function Homepage () {
         <img className={styles.imgTag} src="https://cgportfolioweb.s3-us-west-1.amazonaws.com/Group+2.png"/>
       </div>
       <div className={styles.buttonContainer}>
-        <div className={styles.button}>View Portfolio</div>
+        <div className={styles.button}>View Profile</div>
       </div>
     </div>
   )
