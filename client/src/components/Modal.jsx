@@ -3,11 +3,11 @@ import styles from '../styles/Modal.css';
 import classnames from 'classnames';
 
 const icon = {
-  "figma": "https://img2.pngio.com/the-design-tools-that-we-work-with-figma-agdigital-figma-png-1660_980.png",
-  "css": "https://e7.pngegg.com/pngimages/658/623/png-clipart-cascading-style-sheets-html-web-development-javascript-web-browser-vs-miscellaneous-blue.png",
-  "react": "https://www.pngfind.com/pngs/m/638-6386507_10-years-of-experience-react-native-logo-svg.png",
-  "nodejs": "https://i7.pngguru.com/preview/99/903/609/node-js-express-js-javascript-npm-installation-others.jpg",
-  "aws": "https://p.kindpng.com/picc/s/152-1522129_how-to-manage-and-automate-aws-ebs-snapshots.png",
+  "figma": "https://cgportfolioweb.s3-us-west-1.amazonaws.com/figma.png",
+  "css": "https://cgportfolioweb.s3-us-west-1.amazonaws.com/css.png",
+  "react": "https://cgportfolioweb.s3-us-west-1.amazonaws.com/react.png",
+  "nodejs": "https://cgportfolioweb.s3-us-west-1.amazonaws.com/nodejs.jpg",
+  "aws": "https://cgportfolioweb.s3-us-west-1.amazonaws.com/aws.png",
   "nextjs": "https://cgportfolioweb.s3-us-west-1.amazonaws.com/next_logo.png",
   "less": "https://cgportfolioweb.s3-us-west-1.amazonaws.com/less.png",
   "graphql": "https://cgportfolioweb.s3-us-west-1.amazonaws.com/graphql.png",
