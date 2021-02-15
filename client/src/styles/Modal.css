@@ -84,6 +84,7 @@
 .modalContent {
   display: grid;
   grid-template-columns: [side-start] 5rem [carousel-start] 1fr [carousel-end] 5rem [side-end];
+  background: #FCFAF0;
 }
 
 .leftSide {
@@ -188,4 +189,10 @@
   max-height: 30rem;
   margin: 0px;
   border-width: 0px;
+}
+
+.webUrl {
+  color: #00ADB5;
+  font-size: 18px;
+  text-decoration: underline;
 }

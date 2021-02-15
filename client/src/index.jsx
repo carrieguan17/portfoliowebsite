@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
 import axios from 'axios';
 import styles from './styles/App.css'
-import Header from './components/Header.jsx';
 import Homepage from './components/Homepage.jsx';
 import Topbar from './components/Topbar.jsx';
 import Topbar2 from './components/Topbar2.jsx';
@@ -52,7 +51,6 @@ function App () {
         <a id="contact" className={styles.aTag}></a>
         <Contact />
       </div>
-      <Header />
     </div>
 
   )
