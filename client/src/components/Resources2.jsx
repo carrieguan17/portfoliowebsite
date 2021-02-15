@@ -20,9 +20,9 @@ function Resources2 () {
         <div className={styles.numBar65}>65%</div>
       </div>
       <div className={styles.bar}>
-        <div className={styles.nameBar}>S3</div>
-        <div className={styles.fillBar65}></div>
-        <div className={styles.numBar65}>65%</div>
+        <div className={styles.nameBar}>GraphQL</div>
+        <div className={styles.fillBar95}></div>
+        <div className={styles.numBar95}>95%</div>
       </div>
       <div className={styles.bar}>
         <div className={styles.nameBar}>Nginx</div>

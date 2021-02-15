@@ -8,15 +8,15 @@
 .cardContainer {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(15.5rem, 1fr));
-  grid-gap: 2.5rem;
+  grid-gap: 4rem;
   justify-content: center;
   justify-items: center;
   align-items: center;
 }
 
 .card {
-  width: 15.5rem;
-  height: 11.61rem;
+  width: 18rem;
+  height: 13.5rem;
   background: #FCFAF0;
   border: 2px solid rgba(192, 199, 197, 0.42);
   box-sizing: border-box;
@@ -25,15 +25,26 @@
 
   display: grid;
   grid-template-rows: repeat(2, min-content);
-  grid-gap: 0.8rem;
+  grid-gap: 0.5rem;
   justify-content: center;
   align-items: center;
   padding-top: 1.2rem;
+
+  cursor: pointer;
+}
+
+.card:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card:hover .cardModal{
+  display:block
 }
 
 .cardImg {
-  width: 10.37rem;
-  height: 6.48rem;
+  padding-top: 0.5rem;
+  width: 12.5rem;
+  height: 8rem;
 }
 
 .cardWords {
@@ -43,4 +54,12 @@
   font-size: 14px;
   line-height: 18px;
   color: #393E46;
+}
+
+.cardModal {
+  display: none;
+  width: 100%;
+  height: auto;
+  background: rgb(34, 34, 34);
+  opacity: 0.6;
 }

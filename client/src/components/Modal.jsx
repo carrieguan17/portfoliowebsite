@@ -3,7 +3,7 @@ import styles from '../styles/Modal.css';
 import classnames from 'classnames';
 
 const testProject = {
-    "tech": ["figma", "css", "react", "nodejs", "aws"]
+    "tech": ["figma", "mongo", "jest", "graphql", "aws", "docker"]
 }
 
 const icon = {
@@ -11,7 +11,22 @@ const icon = {
   "css": "https://e7.pngegg.com/pngimages/658/623/png-clipart-cascading-style-sheets-html-web-development-javascript-web-browser-vs-miscellaneous-blue.png",
   "react": "https://www.pngfind.com/pngs/m/638-6386507_10-years-of-experience-react-native-logo-svg.png",
   "nodejs": "https://i7.pngguru.com/preview/99/903/609/node-js-express-js-javascript-npm-installation-others.jpg",
-  "aws": "https://p.kindpng.com/picc/s/152-1522129_how-to-manage-and-automate-aws-ebs-snapshots.png"
+  "aws": "https://p.kindpng.com/picc/s/152-1522129_how-to-manage-and-automate-aws-ebs-snapshots.png",
+  "nextjs": "https://cgportfolioweb.s3-us-west-1.amazonaws.com/next_logo.png",
+  "less": "https://cgportfolioweb.s3-us-west-1.amazonaws.com/next_logo.png",
+  "graphql": "https://cgportfolioweb.s3-us-west-1.amazonaws.com/graphql.png",
+  "javascript": "https://cgportfolioweb.s3-us-west-1.amazonaws.com/javascript.png",
+  "docker": "https://cgportfolioweb.s3-us-west-1.amazonaws.com/docker.png",
+  "jest": "https://cgportfolioweb.s3-us-west-1.amazonaws.com/jest.png",
+  "enzyme": "https://cgportfolioweb.s3-us-west-1.amazonaws.com/enzyme.png",
+  "mongo": "https://cgportfolioweb.s3-us-west-1.amazonaws.com/mongo.jpg",
+  "postgresql": "https://cgportfolioweb.s3-us-west-1.amazonaws.com/postgress.png",
+  "newrelic": "https://cgportfolioweb.s3-us-west-1.amazonaws.com/newrelic.png",
+  "loaderio": "https://cgportfolioweb.s3-us-west-1.amazonaws.com/loaderIo.png",
+  "nginx": "https://cgportfolioweb.s3-us-west-1.amazonaws.com/nginx.png",
+  "mysql": "https://cgportfolioweb.s3-us-west-1.amazonaws.com/mysql.png",
+  "chartjs": "https://cgportfolioweb.s3-us-west-1.amazonaws.com/chartjs.png",
+  "mongoose": "https://cgportfolioweb.s3-us-west-1.amazonaws.com/mongoose.png"
 }
 
 function Modal (props) {
