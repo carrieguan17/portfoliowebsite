@@ -6,7 +6,6 @@ const testProject = {
     "tech": ["figma", "css", "react", "nodejs", "aws"]
 }
 
-
 const icon = {
   "figma": "https://img2.pngio.com/the-design-tools-that-we-work-with-figma-agdigital-figma-png-1660_980.png",
   "css": "https://e7.pngegg.com/pngimages/658/623/png-clipart-cascading-style-sheets-html-web-development-javascript-web-browser-vs-miscellaneous-blue.png",
@@ -19,8 +18,8 @@ function Modal (props) {
 
   const [moveForward, setMoveForward] = useState(false)
 
-  var leftButton = moveForward?  (<LeftButton />) : null
-  var rightButton = moveForward? null : (<RightButton />)
+  var leftButton = moveForward?  (<LeftButton />) : null;
+  var rightButton = moveForward? null : (<RightButton />);
 
   function LeftButton () {
     return (
@@ -45,7 +44,7 @@ function Modal (props) {
         <div className={styles.frame}>
           <div className={styles.modalHeader}>
             <div className={styles.headerContent}>
-              <div className={styles.headerWords}>Project Demo</div>
+              <div className={styles.headerWords}>Project Name</div>
               <div onClick={() => props.onClickCancel()}>
                 <svg className={styles.icon} viewBox="-12 -12 48 48" xmlns="http://www.w3.org/2000/svg">
                 <path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/>
@@ -63,7 +62,7 @@ function Modal (props) {
                   !moveForward && styles.moveBackward) }
               >
                 <div className={styles.carouselCard}>
-                    <iframe className={styles.videoPlayer} src="https://www.youtube.com/embed/oiOzU30eLbg" frameborder="0" allowfullscreen allow="autoplay"/>
+                  <iframe className={styles.videoPlayer} src="https://www.youtube.com/embed/oiOzU30eLbg" frameborder="0" allowfullscreen allow="autoplay"/>
                   <div>Website: carrieguan.com</div>
                   <div className={styles.techIconContainer}>
                     {testProject.tech.map((item) => (
@@ -71,7 +70,10 @@ function Modal (props) {
                     ))}
                   </div>
                 </div>
-                <div className={styles.carouselCard}>page2</div>
+                <div className={styles.carouselCard}>
+                  <img className={styles.projectImage} src="https://cgportfolioweb.s3-us-west-1.amazonaws.com/homepage.jpg"/>
+                  <div className={styles.projectDescription}>Carrie's portfolio website displays her projects and some of her favorite front-end features. These include responsive grid layout, carousel, modals, accordion, and animations.</div>
+                </div>
               </div>
             </div>
             <div className={styles.rightSide}>{rightButton}</div>

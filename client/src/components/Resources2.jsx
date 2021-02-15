@@ -49,6 +49,7 @@ function Resources2 () {
         <div className={styles.fillBar80}></div>
         <div className={styles.numBar80}>80%</div>
       </div>
+      <a id="portfolio"></a>
     </div>
   )
 }

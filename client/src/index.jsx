@@ -17,7 +17,7 @@ import Modal from './components/Modal.jsx';
 
 function App () {
 
-  const [showModal, setShowModal] = useState(true);
+  const [showModal, setShowModal] = useState(false);
 
   function onClickCard () {
     setShowModal(true)
@@ -42,12 +42,16 @@ function App () {
       {PortfolioModal}
       <div className={styles.container}>
         <Homepage />
+        <a id="about" className={styles.aTag}></a>
         <AboutWords />
         <AboutPhoto />
         <Resources1 />
         <Resources2 />
+        <a id="portfolio" className={styles.aTag}></a>
         <Portfolio onClickCard={onClickCard} />
+        <a id="blog" className={styles.aTag}></a>
         <Blog />
+        <a id="contact" className={styles.aTag}></a>
         <Contact />
       </div>
       <Header />

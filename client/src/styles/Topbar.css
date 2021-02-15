@@ -36,6 +36,9 @@
 
   text-align: center;
   align-items: center;
+}
+
+.logoWords {
   font-family: Cookie;
   font-style: normal;
   font-weight: normal;
@@ -55,13 +58,13 @@
 
   text-align: center;
   align-items: center;
-
 }
 
 a {
-  font-family: Lora;
+  font-family: Lora, Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 1rem;
+  font-size: 1.5rem;
   color: #FCFAF0;
+  text-decoration: none;
 }

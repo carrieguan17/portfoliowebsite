@@ -5,16 +5,21 @@ import style from '../styles/Typography.css'
 function AboutWords () {
   return(
     <div className={styles.aboutWords}>
-      <div className={styles.circleContainer}>
-        <div></div>
-        <div className={styles.circle}>Responsive</div>
-        <div className={styles.circle}>Scalable</div>
-        <div className={styles.circle}>Performant</div>
-      </div>
-      <div className={styles.about}>About Carrie</div>
-      <div className={styles.intro}>
-        Wikipedia is a multilingual open-collaborative online encyclopedia created and maintained by a community of volunteer editors using a wiki-based editing system. It is one of the 15 most popular websites as ranked by Alexa, as of August 2020.Featuring no ads, it is hosted by the Wikimedia Foundation, an American non-profit organization funded primarily through donations. It was initially an English-language encyclopedia.
-      </div>
+        <div className={styles.circleContainer}>
+          <div></div>
+          <div className={styles.circle}>Responsive</div>
+          <div className={styles.circle}>Scalable</div>
+          <div className={styles.circle}>Performant</div>
+        </div>
+        <div className={styles.about}>About Carrie</div>
+        <div className={styles.intro}>
+          <p>
+            I have been a full-stack software engineer since 2019 when I built a business website from scratch for a CPA firm. Currently I am working in a start-up for an automatic scheduling platform. I enjoy making good design and translate visual ideas into codes. It feels very rewarding to create new features and refine user experience. And most importantly, it is exciting to work with like-minded people and challenge each other's idea in refining algorithm, optimizing website performance, and improving code cleanliness.
+          </p>
+          <p>
+            A few simple lines of codes can change our life or even restructure the system in certin industries. If you have a similar life pursuit, I look forward to connnecting with you.
+          </p>
+        </div>
     </div>
   )
 }

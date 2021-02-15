@@ -2,7 +2,10 @@
 
 .portfolio {
   grid-column: col-end 1 / col-end 9;
-  padding-top: 6rem;
+  padding-top: 2rem;
+}
+
+.cardContainer {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(15.5rem, 1fr));
   grid-gap: 2.5rem;
@@ -34,7 +37,7 @@
 }
 
 .cardWords {
-  font-family: Lora;
+  font-family: Lora, Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
