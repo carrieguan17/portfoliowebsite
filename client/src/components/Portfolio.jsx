@@ -24,7 +24,7 @@ function Portfolio (props) {
       tech: ["figma", "jest", "enzyme", "docker", "aws"]
     },
     {
-      name: "Rental Property App Scalling",
+      name: "Rental App Scalling",
       shortDescription: "System design",
       fullDescription: "to be written",
       imgUrl: "https://cgportfolioweb.s3-us-west-1.amazonaws.com/rental_property.JPG",
@@ -42,12 +42,12 @@ function Portfolio (props) {
       tech: ["css", "react", "mysql", "nodejs", "javascript"]
     },
     {
-      name: "Registration Form",
+      name: "Chat Room",
       shortDescription: "React forms and props",
       fullDescription: "to be written",
-      imgUrl: "https://cgportfolioweb.s3-us-west-1.amazonaws.com/event_registration.JPG",
-      demoUrl: "",
-      webUrl: "https://github.com/carrieguan17/eventregistration",
+      imgUrl: "https://cgportfolioweb.s3-us-west-1.amazonaws.com/chatterbox.jpeg",
+      demoUrl: "https://www.youtube.com/embed/KQ-ICQgbUok",
+      webUrl: "",
       tech: ["css", "react", "mongoose", "nodejs", "javascript"]
     },
     {
@@ -65,9 +65,9 @@ function Portfolio (props) {
     return(
       <div className={styles.card} onClick={() => props.onClickCard(project)}>
         <img className={styles.cardImg} src={project.imgUrl}></img>
-        <div className={styles.cardWords}>
-          <div><b>{project.name}</b></div>
-          <div>{project.shortDescription}</div>
+        <div>
+          <div className={styles.cardTitle}>{project.name}</div>
+          <div className={styles.cardWords}>{project.shortDescription}</div>
         </div>
     </div>
     )

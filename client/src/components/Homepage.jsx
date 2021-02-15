@@ -4,7 +4,7 @@ import styles from '../styles/Homepage.css';
 function Homepage () {
   return(
       <div className={styles.homepage}>
-        <div className={styles.words}>Carrie is a Web designer and developer based in San Francisco
+        <div className={styles.words}>Carrie is a web designer and developer based in San Francisco
         </div>
         <div className={styles.imgContainer}>
           <img className={styles.imgTag} src="https://cgportfolioweb.s3-us-west-1.amazonaws.com/Group+2.png"/>

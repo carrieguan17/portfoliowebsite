@@ -5,7 +5,7 @@
   z-index: 300;
   background: url("https://cgportfolioweb.s3-us-west-1.amazonaws.com/homepage_background.JPG");
   background-repeat: no-repeat;
-  /* background-size: 100% auto; */
+  background-size: cover;
 
   display: grid;
   grid-template-rows: 12rem 36rem;

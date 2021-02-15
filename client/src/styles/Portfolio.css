@@ -16,7 +16,7 @@
 
 .card {
   width: 18rem;
-  height: 13.5rem;
+  height: 14rem;
   background: #FCFAF0;
   border: 2px solid rgba(192, 199, 197, 0.42);
   box-sizing: border-box;
@@ -34,11 +34,14 @@
 }
 
 .card:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.card:hover .cardModal{
-  display:block
+  transform: scale(1.05);
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+  box-shadow:
+  inset 0 -5px 20px hsla(0, 0%, 0%, 0.4), /* top light */
+  inset 0 5px 20px hsla(0, 0%, 100%, 0.4), /* bottom shadow */
+  /* multiple light sources */
+  -12px 12px 5px hsla(0, 0%, 0%, 0.15), /* drop shadow 1 */
+  10px 25px 10px hsla(0, 0%, 0%, 0.2); /* drop shadow 2 */
 }
 
 .cardImg {
@@ -47,12 +50,21 @@
   height: 8rem;
 }
 
+.cardTitle {
+  font-family: Lora, Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 24px;
+  color:  #00ADB5;
+}
+
 .cardWords {
   font-family: Lora, Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
-  line-height: 18px;
+  font-size: 16px;
+  line-height: 20px;
   color: #393E46;
 }
 

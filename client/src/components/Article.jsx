@@ -34,7 +34,7 @@ function Article (props) {
         <div className={ classnames(styles.articleContent, props.active === props.title && styles.articleShow) }>
           <div className={styles.content}>
             <p>
-              This is the first test for accordion.
+              Coming soon
             </p>
           </div>
         </div>

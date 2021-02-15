@@ -55,3 +55,9 @@
   line-height: 24px;
   color: #393E46;
 }
+
+.introLink {
+  color: #00ADB5;
+  font-size: 18px;
+  text-decoration: underline;
+}
