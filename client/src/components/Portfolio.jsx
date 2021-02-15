@@ -39,7 +39,7 @@ function Portfolio (props) {
       imgUrl: "https://mvpimg.s3-us-west-1.amazonaws.com/shoppinglist.jpg",
       demoUrl: "https://www.youtube.com/embed/12hK1i-OqfA",
       webUrl: "https://github.com/carrieguan17/shoppinglist",
-      tech: ["css", "react", "mysql", "nodejs"]
+      tech: ["css", "react", "mysql", "nodejs", "javascript"]
     },
     {
       name: "Registration Form",
@@ -48,7 +48,7 @@ function Portfolio (props) {
       imgUrl: "https://cgportfolioweb.s3-us-west-1.amazonaws.com/event_registration.JPG",
       demoUrl: "",
       webUrl: "https://github.com/carrieguan17/eventregistration",
-      tech: ["css", "react", "mongoose", "nodejs"]
+      tech: ["css", "react", "mongoose", "nodejs", "javascript"]
     },
     {
       name: "Crypto Rate History",
@@ -57,13 +57,13 @@ function Portfolio (props) {
       imgUrl: "https://cgportfolioweb.s3-us-west-1.amazonaws.com/cryto_rate_history.JPG",
       demoUrl: "",
       webUrl: "",
-      tech: ["chartjs", "react", "nodejs"]
+      tech: ["chartjs", "react", "nodejs", "javascript", "mocha", "chai"]
     }
   ]
 
   const Card = ({ project, onClickCard }) => {
     return(
-      <div className={styles.card} onClick={() => props.onClickCard()}>
+      <div className={styles.card} onClick={() => props.onClickCard(project)}>
         <img className={styles.cardImg} src={project.imgUrl}></img>
         <div className={styles.cardWords}>
           <div><b>{project.name}</b></div>

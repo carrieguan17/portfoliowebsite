@@ -18,22 +18,20 @@ import Modal from './components/Modal.jsx';
 function App () {
 
   const [showModal, setShowModal] = useState(false);
+  const [project, setProject] = useState(null)
 
-  function onClickCard () {
-    setShowModal(true)
+  function onClickCard (project) {
+    setShowModal(true);
+    setProject(project)
   }
 
   function onClickCancel () {
     setShowModal(false)
   }
 
-  var PortfolioModal
-  if (showModal) {
-    PortfolioModal = <Modal onClickCancel={onClickCancel} />
-  } else {
-    PortfolioModal = null
-  }
-
+  const PortfolioModal = showModal
+  ? <Modal onClickCancel={onClickCancel} project={project}/>
+  : null
 
   return (
     <div>
