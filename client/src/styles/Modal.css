@@ -185,10 +185,14 @@
 .projectImage {
   align-self: center;
   justify-self: center;
-  max-width: 40rem;
-  max-height: 30rem;
+  width: 40rem;
+  height: 25rem;
   margin: 0px;
   border-width: 0px;
+}
+
+.projectDescription {
+  margin-right: 1.5rem
 }
 
 .webUrl {

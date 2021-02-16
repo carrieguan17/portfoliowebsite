@@ -51,7 +51,7 @@ function Blog () {
           </button>
           <div>
             <div>Below are some summaries I made from work.</div>
-            <div>Let's will see further by standing on the shoulders of giants.</div>
+            <div>Let's see further by standing on the shoulders of giants.</div>
           </div>
         </div>
         {articles.map((article) =>

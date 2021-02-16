@@ -24,7 +24,8 @@ const icon = {
   "chartjs": "https://cgportfolioweb.s3-us-west-1.amazonaws.com/chartjs.png",
   "mongoose": "https://cgportfolioweb.s3-us-west-1.amazonaws.com/mongoose.png",
   "chai": "https://cgportfolioweb.s3-us-west-1.amazonaws.com/chai.png",
-  "mocha": "https://cgportfolioweb.s3-us-west-1.amazonaws.com/mocha.png"
+  "mocha": "https://cgportfolioweb.s3-us-west-1.amazonaws.com/mocha.png",
+  "jquery": "https://cgportfolioweb.s3-us-west-1.amazonaws.com/jquery.jpg"
 }
 
 function Modal ({ onClickCancel, project }) {
