@@ -5,17 +5,17 @@
   position: fixed;
   left: 0;
   right: 0;
-  margin: auto;
+  margin: 0;
 
   display: grid;
   grid-template-rows: 4.5rem;
-  grid-template-columns: [full-start] minmax(3.5rem, 1fr) [center-start] repeat(10, [col-start] minmax(min-content, 8rem) [col-end]) [center-end] minmax(3.5rem, 1fr) [full-end];
+  grid-template-columns: [full-start] minmax(1.5rem, 1fr) [center-start] repeat(10, [col-start] minmax(min-content, 8rem) [col-end]) [center-end] minmax(1.5rem, 1fr) [full-end];
 
   z-index: 100;
 }
 
 .logoContainer {
-  grid-column: center-start / col-end 6;
+  grid-column: center-start / col-end 4;
   background: #00ADB5;
   box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.25);
 
@@ -44,23 +44,24 @@
   font-weight: normal;
   font-size: 4rem;
   color: #FCFAF0;
+  text-decoration: none;
 }
 
 .nav {
   list-style: none;
-  grid-column: col-end 6 / center-end;
+  grid-column: col-end 4 / center-end;
   height: 4.5rem;
   background: #00ADB5;
   box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.25);
 
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(6rem, 1fr));
 
   text-align: center;
   align-items: center;
 }
 
-a {
+.navLink {
   font-family: Lora, Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: bold;

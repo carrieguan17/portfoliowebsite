@@ -1,8 +1,9 @@
 .aboutPhoto {
-  grid-column: col-end 6 / center-end;
+  grid-column: center-start / center-end;
   display: grid;
   justify-items: center;
   align-content: center;
+  padding-bottom: 3rem;
 }
 
 .profilePhoto {
@@ -10,4 +11,10 @@
   border-radius: 50%;
   width: auto;
   height: 26rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .aboutPhoto{
+    grid-column: col-end 6 / center-end;
+  }
 }

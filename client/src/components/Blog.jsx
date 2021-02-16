@@ -45,11 +45,11 @@ function Blog () {
   return(
     <div className={styles.blog}>
       <div className={ classnames(styles.articleContainer, active !=="" && styles.activeMode) }>
-        <div className={styles.blogHeader}>
-          <button className={styles.headerButton}>
+        <div className={styles.blogHeaderContainer}>
+          <div className={styles.headerButton}>
             温故而知新
-          </button>
-          <div>
+          </div>
+          <div className={styles.blogHeader}>
             <div>Below are some summaries I made from work.</div>
             <div>Let's see further by standing on the shoulders of giants.</div>
           </div>

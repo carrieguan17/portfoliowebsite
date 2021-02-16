@@ -15,7 +15,7 @@ function Resources1 () {
         <div className={styles.numBar95}>95%</div>
       </div>
       <div className={styles.bar}>
-        <div className={styles.nameBar}>CSS/Sass/Less</div>
+        <div className={styles.nameBar}>Sass/Less</div>
         <div className={styles.fillBar95}></div>
         <div className={styles.numBar95}>95%</div>
       </div>
