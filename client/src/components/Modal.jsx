@@ -77,7 +77,7 @@ function Modal ({ onClickCancel, project }) {
               >
                 <div className={styles.carouselCard}>
                   <iframe className={styles.videoPlayer} src={project.demoUrl} frameborder="0" allowFullScreen allow="autoplay"/>
-                  <div className={styles.webUrlContainer}><a href={project.webUrl} className={styles.webUrl}>{project.webUrl}</a></div>
+                  <div className={styles.webUrlContainer}><a href={project.webUrl} className={styles.webUrl} target="_.blank">{project.webUrl}</a></div>
                   <div className={styles.techIconContainer}>
                     {project.tech.map((item) => (
                       <img src={icon[item]} className={styles.techIcon}/>
