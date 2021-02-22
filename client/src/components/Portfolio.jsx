@@ -7,7 +7,7 @@ function Portfolio (props) {
   const projects = [
     {
       name: "Small Business Website",
-      shortDescription: "Responsive Layout",
+      shortDescription: "Web Design",
       fullDescription: "This is originally a website for marketing purpose. Currently a new version is under construction to address the increasing inquiries on pricing, appointment schedule and business process. New features include: a selection pannel for users to choose tax situations for a quote; a calendar for users to schedule a brief phone discussion; an authenticated platform for users to upload and e-sign documents, and access tax returns.",
       imgUrl: "https://mvpimg.s3-us-west-1.amazonaws.com/taxprep.JPG",
       demoUrl: "https://www.youtube.com/embed/hytHQtivKuA",
@@ -16,7 +16,7 @@ function Portfolio (props) {
     },
     {
       name: "Portfolio Website",
-      shortDescription: "Full-stack app",
+      shortDescription: "Responsive Layout",
       fullDescription: "Carrie's portfolio website displays her projects and some of her favorite front-end features. These include responsive grid layout, carousel, modals, accordion, and animations. The demo video shows the first version available at http://18.144.29.220/. If you are reading this paragraph, you are visiting the upgraded version! Design and coding are fun and success is going beyond one's past self. Wish you happily feel the same :) ",
       imgUrl: "https://cgportfolioweb.s3-us-west-1.amazonaws.com/homepage.jpg",
       demoUrl: "https://www.youtube.com/embed/oiOzU30eLbg",
@@ -34,7 +34,7 @@ function Portfolio (props) {
     },
     {
       name: "Shopping List",
-      shortDescription: "React state and lifecyle",
+      shortDescription: "Full Stack App",
       fullDescription: "This is Carrie's first full-stack app! A form is to capture the item name and the amount. Once the user adds the item, a post request will update the database. Subsequently a get request is fired to obtain the revised shopping list and re-render the page.",
       imgUrl: "https://mvpimg.s3-us-west-1.amazonaws.com/shoppinglist.jpg",
       demoUrl: "https://www.youtube.com/embed/12hK1i-OqfA",
