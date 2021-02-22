@@ -69,7 +69,7 @@ function Portfolio (props) {
           <div className={styles.cardTitle}>{project.name}</div>
           <div className={styles.cardWords}>{project.shortDescription}</div>
         </div>
-    </div>
+      </div>
     )
   }
 

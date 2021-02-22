@@ -3,7 +3,10 @@
 .homepage {
   grid-column: center-start / center-end;
   z-index: 300;
-  background: url("https://cgportfolioweb.s3-us-west-1.amazonaws.com/homepage_background.JPG");
+  height: 100%;
+  width: auto;
+  background-image: url("https://cgportfolioweb.s3-us-west-1.amazonaws.com/homepage_bg.JPG");
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 
