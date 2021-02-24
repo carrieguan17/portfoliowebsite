@@ -7,9 +7,9 @@ function AboutWords () {
     <div className={styles.aboutWords}>
         <div className={styles.circleContainer}>
           <div></div>
-          <div className={styles.circle}>Responsive</div>
-          <div className={styles.circle}>Scalable</div>
-          <div className={styles.circle}>Performant</div>
+          <div className={styles.circle}></div>
+          <div className={styles.circle}></div>
+          <div className={styles.circle}></div>
         </div>
         <div className={styles.about}>About Carrie</div>
         <div className={styles.intro}>

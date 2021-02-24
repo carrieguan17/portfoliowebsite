@@ -47,8 +47,8 @@ function App () {
         <a id="portfolio" className={styles.aTag}></a>
         <Portfolio onClickCard={onClickCard} />
         <a id="blog" className={styles.aTag}></a>
-        <Blog />
-        <a id="contact" className={styles.aTag}></a>
+        {/* <Blog />
+        <a id="contact" className={styles.aTag}></a> */}
         <Contact />
       </div>
     </div>

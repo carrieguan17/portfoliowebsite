@@ -1,6 +1,6 @@
 .container {
   display: grid;
-  grid-template-rows: minmax(min-content, 95vh) repeat(12, min-content);
+  grid-template-rows: minmax(min-content, 95vh) repeat(10, min-content);
   grid-template-columns: [full-start] minmax(1rem, 1fr) [center-start] repeat(10, [col-start] minmax(min-content, 8rem) [col-end]) [center-end] minmax(1rem, 1fr) [full-end];
 }
 
@@ -11,12 +11,12 @@
 
 @media screen and (min-width: 768px) {
   .container {
-    grid-template-rows: minmax(min-content, 95vh) repeat(11, min-content);
+    grid-template-rows: minmax(min-content, 95vh) repeat(9, min-content);
   }
 }
 
 @media screen and (min-width: 1024px) {
   .container {
-    grid-template-rows: minmax(min-content, 95vh) repeat(9, min-content);
+    grid-template-rows: minmax(min-content, 95vh) repeat(7, min-content);
   }
 }
