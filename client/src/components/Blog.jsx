@@ -2,43 +2,42 @@ import React, { useState } from 'react';
 import styles from '../styles/Blog.css';
 import Article from './Article.jsx';
 import classnames from 'classnames'
+import { connect } from 'react-redux';
 
-function Blog () {
-
-  const [active, setActive] = useState("");
+function Blog ({ active }) {
 
   const articles = [
     {
       title: "What are the benefits of Sequelize and JSONB",
-      content: ""
+      content: "Coming soon"
     },
     {
       title: "How to optimize query execution time",
-      content: ""
+      content: "Coming soon"
     },
     {
       title: "How to improve request per second with load balancer",
-      content: ""
+      content: "Coming soon"
     },
     {
       title: "How to interpret New Relic metrics",
-      content: ""
+      content: "Coming soon"
     },
     {
       title: "How to work with large amount of data using Streams and Drain Event",
-      content: ""
+      content: "Coming soon"
     },
     {
       title: "How to refresh a page after updates: useEffect v.s. useContext",
-      content: ""
+      content: "Coming soon"
     },
     {
       title: "What are some ideas for app scalability and maintainability",
-      content: ""
+      content: "Coming soon"
     },
     {
       title: "Async/await, try/catch, and console.error v.s. throw e",
-      content: ""
+      content: "Coming soon"
     }
   ]
 
@@ -55,11 +54,15 @@ function Blog () {
           </div>
         </div>
         {articles.map((article) =>
-          <Article title={article.title} active={active} setActive={setActive} />
+          <Article article={article} key={articles.title}/>
         )}
       </div>
     </div>
   )
 }
 
-export default Blog
+const mapStateToProps = state => ({
+  active: state.article.active
+})
+
+export default connect(mapStateToProps)(Blog)
