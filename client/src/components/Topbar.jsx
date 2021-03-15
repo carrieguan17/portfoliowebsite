@@ -10,7 +10,7 @@ function Topbar () {
       <div className={styles.nav}>
         <div className={styles.item}><a href="#about" className={styles.navLink}>About</a></div>
         <div className={styles.item}><a href="#portfolio" className={styles.navLink}>Portfolio</a></div>
-        {/* <div className={styles.item}><a href="#blog" className={styles.navLink}>Blog</a></div> */}
+        <div className={styles.item}><a href="#blog" className={styles.navLink}>Blog</a></div>
         <div className={styles.item}><a href="#contact" className={styles.navLink}>Contact</a></div>
       </div>
     </div>

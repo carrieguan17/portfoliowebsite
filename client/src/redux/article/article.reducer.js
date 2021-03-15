@@ -9,6 +9,11 @@ const article = (state = INITIAL_STATE, action) => {
         ...state,
         active: action.payload
       }
+    case 'SET_EMPTY':
+      return {
+        ...state,
+        active: ""
+      }
     default:
       return state
   }

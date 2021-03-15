@@ -2,25 +2,31 @@ import React from 'react';
 import styles from '../styles/Article.css';
 import classnames from 'classnames';
 import { connect } from 'react-redux';
-import { setActive } from "../redux/article/article.action";
+import { setActive, setEmpty } from "../redux/article/article.action";
 
-function BtnIcon ({ title, active, setActive}) {
+function BtnIcon ({ title, active, dispatch }) {
   if (active !== title) {
     return(
-        <div onClick={() => setActive(title)}>
+        <div onClick={() => dispatch({
+          type: "SET_ACTIVE_ARTICLE",
+          payload: title
+        })}>
           <svg className={styles.icon} viewBox="-8 -10 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z"/></svg>
         </div>
     )
   } else {
     return (
-      <div onClick={() => setActive("")}>
+      <div onClick={() => dispatch({
+        type: "SET_EMPTY",
+        payload: ""
+      })}>
         <svg className={styles.icon} viewBox="-10 -11 45 45" xmlns="http://www.w3.org/2000/svg"><path d="M23 20.168l-8.185-8.187 8.185-8.174-2.832-2.807-8.182 8.179-8.176-8.179-2.81 2.81 8.186 8.196-8.186 8.184 2.81 2.81 8.203-8.192 8.18 8.192z"/></svg>
       </div>
     )
   }
 }
 
-function Article ({ article, active, setActive }) {
+function Article ({ article, active, dispatch }) {
 
   // let classNames = classnames(styles.articleContent, { [styles.articleShow]: props.active === props.title });
 
@@ -30,7 +36,7 @@ function Article ({ article, active, setActive }) {
         <div className={styles.headingContainer}>
           <div className={styles.title}>{article.title}</div>
           <div>
-            <BtnIcon title={article.title} active={active} setActive={setActive}/>
+            <BtnIcon title={article.title} active={active} dispatch={dispatch}/>
           </div>
         </div>
         <div className={ classnames(styles.articleContent, active === article.title && styles.articleShow) }>
@@ -49,8 +55,8 @@ const mapStateToProps = state => ({
   active: state.article.active
 })
 
-const mapDispatchToProps = dispatch => ({
-  setActive: title => dispatch(setActive(title))
-})
+// const mapDispatchToProps = dispatch => ({
+//   setActive: title => dispatch(setActive(title))
+// })
 
-export default connect(mapStateToProps, mapDispatchToProps)(Article)
+export default connect(mapStateToProps)(Article)
