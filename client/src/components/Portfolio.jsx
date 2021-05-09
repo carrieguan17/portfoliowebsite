@@ -17,7 +17,7 @@ function Portfolio (props) {
     {
       name: "Portfolio Website",
       shortDescription: "Responsive Layout",
-      fullDescription: "Carrie's portfolio website displays her projects and some of her favorite front-end features. These include responsive grid layout, carousel, modals, accordion, and animations. The demo video shows the first version available at https://carrieguan17.github.io/carriepersonalwebsite/. If you are reading this paragraph, you are visiting the upgraded version! Design and coding are fun and success is going beyond one's past self. Wish you happily feel the same :) ",
+      fullDescription: "Carrie's portfolio website displays her projects and some of her favorite front-end features. These include responsive grid layout, carousel, modals, accordion, and animations. The demo video shows the first version. If you are reading this paragraph, you are visiting the upgraded version! Design and coding are fun and success is going beyond one's past self. Wish you happily feel the same :) ",
       imgUrl: "https://cgportfolioweb.s3-us-west-1.amazonaws.com/homepage.jpg",
       demoUrl: "https://www.youtube.com/embed/oiOzU30eLbg",
       webUrl: "carrieguan.com",
