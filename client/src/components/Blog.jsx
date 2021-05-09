@@ -54,7 +54,7 @@ function Blog ({ active }) {
           </div>
         </div>
         {articles.map((article) =>
-          <Article article={article} key={articles.title}/>
+          <Article article={article} key={article.title}/>
         )}
       </div>
     </div>
